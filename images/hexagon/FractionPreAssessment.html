@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FractionPreTest</title>
+	<meta name="generator" content="BBEdit 11.6" />
+</head>
+<style>
+.problem{
+	width:150px;
+}
+
+#box{
+width:25px;
+border: none;
+border-bottom: 2px solid blue;
+font-size: 12pt;
+text-align: center;
+font-family: "Times New Roman", Times, serif;
+//font-family: "Georgia",serif;
+}
+
+#top{
+ width:16px;
+ font-size: 16pt;
+ font-weight: bold;
+ text-align: center;
+ border-bottom: 2pt solid black; 
+ font-family: "Times New Roman", Times, serif;
+}
+
+#sign1M{
+ width:20px;
+ font-size: 18pt;
+ font-weight: bold;
+ text-align: center;
+ font-family: "Times New Roman", Times, serif;
+}
+
+#bottom{
+ font-size: 16pt;
+ font-weight: bold;
+ text-align: center;
+ font-family: "Times New Roman", Times, serif;
+}
+
+#fraction1{
+border-bottom: 2pt solid black;
+}
+
+#numBox, #denBox{
+width:30px;
+//border: none;
+//border-bottom: 2px solid blue;
+font-size: 14pt;
+font-weight: bold;
+text-align: center;
+font-family: "Times New Roman", Times, serif;
+//font-family: "Georgia",serif;
+}
+
+#numBox2, #denBox2{
+position: relative;
+top: 0px;
+width:30px;
+//border: none;
+//border-bottom: 2px solid blue;
+font-size: 14pt;
+font-weight: bold;
+text-align: center;
+font-family: "Times New Roman", Times, serif;
+//font-family: "Georgia",serif;
+}
+
+#secondfractionNum{
+position: relative;
+top: -4px;
+}
+
+#secondfractionDen{
+position: relative;
+top: 4px;
+}
+
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.092em;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+}
+.frac > span {
+    display: block;
+    padding: 0em;
+}
+.frac span.bottom {
+    border-top:  solid black;
+}
+.frac span.symbol {
+    display: none;
+} 
+.numberImproper{
+font-size: 20pt;
+}
+
+</style>
+<body>
+<h3></h3>
+<h1> Fraction Pre-Test</h1>
+<h2> Fraction Preliminaries
+<h3> Part A Represent each picture as a simplified fraction.</h3>
+<table id="table0">
+<tr>
+<td><img class="pie" src="images/circle/3o5.png_" height="100" width="100 " alt="Fraction Pie" /></td>
+	<td name="problem0"></td>
+		<td><img class="pie" src="images/rectangle/3o8.png_" height="100" width="100 " alt="Fraction Pie" /></td>
+			<td class="problem" name="problem0" style="align:left"></td>
+</tr>
+<tr>
+<td><img class="pie" src="images/hexagon/2o6.png_" height="100" width="100 " alt="Fraction Pie" /></td>
+	<td class="problem" name="problem1"></td>
+		<td ><img class="pie" src="images/square/3o4.png_" height="100" width="100 " alt="Fraction Pie" /></td>
+			<td class="problem" name="problem1"></td>
+</tr>
+<tr>
+<td><img class="pie" src="images/rectangle/6o8.png_" height="100" width="100 " alt="Fraction Pie" /></td>
+	<td class="problem" name="problem1"></td>
+		<td><img class="pie" src="images/hexagon/5o6.png_" height="100" width="100 " alt="Fraction Pie" /></td>
+			<td class="problem" name="problem1"></td>
+</tr>
+<tr>
+<td name="problem1"></td>
+	<td class="problem" name="problem1"></td>
+		<td ></td>
+			<td class="problem" name="problem1"></td>
+</tr>
+<td colspan="3" align="center" height="5"><br><button name="check" id="check" onclick="checkAnswers1()">Check Answers</button></td>
+</tr>
+<td colspan="3" align="center" height="5" id="results1" style="color:blue;"></td>
+</tr>
+</table>
+
+<h3> Part B Fill in the blanks with numbers that make fractions equal.</h3>
+<table id="table05">
+<tr>
+<td class="problem" name="problem1"></td>
+	<td class="problem" name="problem1"></td>
+		<td class="problem" name="problem1"></td>
+			<td class="problem" name="problem1"></td>
+</tr>
+<tr>
+<td class="problem" name="problem1"></td>
+	<td class="problem" name="problem1"></td>
+		<td class="problem" name="problem1"></td>
+			<td class="problem" name="problem1"></td>
+</tr>
+<tr>
+<td class="problem" name="problem1"></td>
+	<td class="problem" name="problem1"></td>
+		<td class="problem" name="problem1"></td>
+			<td class="problem" name="problem1"></td>
+</tr>
+<tr>
+<td class="problem" name="problem1"></td>
+	<td class="problem" name="problem1"></td>
+		<td class="problem" name="problem1"></td>
+			<td class="problem" name="problem1"></td>
+</tr>
+<td colspan="3" align="center" height="5"><br><button name="check" id="check" onclick="checkAnswers1()">Check Answers</button></td>
+</tr>
+<td colspan="3" align="center" height="5" id="results1" style="color:blue;"></td>
+</tr>
+</table>
+<div id="comment1"> </div>
+
+
+<h3> Part C Simplify each fraction.</h3>
+<table id="table1">
+<tr>
+<td class="problem" name="problem1"></td>
+	<td class="problem" name="problem1"></td>
+		<td class="problem" name="problem1"></td>
+			<td class="problem" name="problem1"></td>
+</tr>
+<tr>
+<td class="problem" name="problem1"></td>
+	<td class="problem" name="problem1"></td>
+		<td class="problem" name="problem1"></td>
+			<td class="problem" name="problem1"></td>
+</tr>
+<tr>
+<td class="problem" name="problem1"></td>
+	<td class="problem" name="problem1"></td>
+		<td class="problem" name="problem1"></td>
+			<td class="problem" name="problem1"></td>
+</tr>
+<tr>
+<td class="problem" name="problem1"></td>
+	<td class="problem" name="problem1"></td>
+		<td class="problem" name="problem1"></td>
+			<td class="problem" name="problem1"></td>
+</tr>
+<td colspan="3" align="center" height="5"><br><button name="check" id="check" onclick="checkAnswers1()">Check Answers</button></td>
+</tr>
+<td colspan="3" align="center" height="5" id="results1" style="color:blue;"></td>
+</tr>
+</table>
+<div id="comment1"> </div>
+<h3> Part D Find the sum or difference and simplify.</h3>
+<table id="table2">
+<tr>
+<td class="problem" name="problem2"></td>
+	<td class="problem" name="problem2"></td>
+		<td class="problem" name="problem2"></td>
+			<td class="problem" name="problem2"></td>
+</tr>
+<tr>
+<td class="problem" name="problem2"></td>
+	<td class="problem" name="problem2"></td>
+		<td class="problem" name="problem2"></td>
+			<td class="problem" name="problem2"></td>
+</tr>
+<tr>
+<td class="problem" name="problem2"></td>
+	<td class="problem" name="problem2"></td>
+		<td class="problem" name="problem2"></td>
+			<td class="problem" name="problem2"></td>
+</tr>
+<tr>
+<td class="problem" name="problem2"></td>
+	<td class="problem" name="problem2"></td>
+		<td class="problem" name="problem2"></td>
+			<td class="problem" name="problem2"></td>
+</tr>
+<td colspan="4" align="center" height="5"><br><button name="check" id="check" onclick="checkAnswers2()">Check Answers</button></td>
+</tr>
+<td colspan="4" align="center" height="5" id="results2" style="color:blue;"></td>
+</tr>
+</table>
+
+<h3> Part D Find the product and simplify.</h3>
+<table id="table3">
+<tr>
+<td class="problem" name="problem3"></td>
+	<td class="problem" name="problem3"></td>
+		<td class="problem" name="problem3"></td>
+			<td class="problem" name="problem3"></td>
+</tr>
+<tr>
+<td class="problem" name="problem3"></td>
+	<td class="problem" name="problem3"></td>
+		<td class="problem" name="problem3"></td>
+			<td class="problem" name="problem3"></td>
+</tr>
+<tr>
+<td class="problem" name="problem3"></td>
+	<td class="problem" name="problem3"></td>
+		<td class="problem" name="problem3"></td>
+			<td class="problem" name="problem3"></td>
+</tr>
+<tr>
+<td class="problem" name="problem3"></td>
+	<td class="problem" name="problem3"></td>
+		<td class="problem" name="problem3"></td>
+			<td class="problem" name="problem3"></td>
+</tr>
+<td colspan="4" align="center" height="5"><br><button name="check" id="check" onclick="checkAnswers3()">Check Answers</button></td>
+</tr>
+<td colspan="4" align="center" height="5" id="results3" style="color:blue;"></td>
+</tr>
+</table>
+
+</body>
+</html>
+
+<script type="text/javascript">
+//Group A Factors: 2,5,10,20]
+var count=0;
+var tabIndex=1;
+var countCor1, countWro1, countAtt1;
+var countCor2, countWro2, countAtt2;
+var countCor3, countWro3, countAtt3;
+var obj;
+
+var group=[];
+var groupDirections=[];
+var problem=[];
+var answer=[];
+var focus=[];
+
+var numberPairs=[2,5];
+numberPairs.push(2,6,2,7,2,8,2,9,2,10,2,11,2,12,2,15,2,20,2,25);
+numberPairs.push(5,3,5,4,5,5,5,6,5,7,5,8,5,9,5,10,5,11,5,12,5,15,5,20,5,25);
+numberPairs.push(10,3,10,4,10,6,10,7,10,8,10,9,10,10,10,11,10,12,10,15,10,15,10,20,10,25);
+numberPairs.push(20,3,20,4,20,5,20,6,20,7,20,8,20,9,20,10,20,15,20,20,20,25);
+
+var pairsLength=numberPairs.length/2;
+//document.getElementById("comment1").innerHTML="pairs length= "+pairsLength+"";
+
+function shuffle()
+{
+	for(var i=0; i<pairsLength; i++)
+	{	
+	var randomIndex=Math.floor(pairsLength*Math.random());
+	var temp1=numberPairs[2*i];
+	numberPairs[2*i]=numberPairs[2*randomIndex];
+	numberPairs[2*randomIndex]=temp1;
+	var temp2=numberPairs[2*i+1];
+	numberPairs[2*i+1]=numberPairs[2*randomIndex+1];
+	numberPairs[2*randomIndex+1]=temp2;
+	}
+}
+
+shuffle();
+createTest();
+
+function createTest(){
+/*
+  for(i=0; i<4; i++){
+	for (j=0; j<4; j++){
+		number1=numberPairs[count];
+		count++;
+		number2=numberPairs[count];
+		count++;
+		document.getElementById("table1").rows[i].cells[j].innerHTML="<p>"+number1+" x "+number2+" = <input type=text  size=1 style='font-size: 12pt;  font-weight: bold' id='box' name='box' tabindex='+tabIndex+'></p>";
+		tabIndex++;
+	}
+   }
+   
+   for(i=0; i<4; i++){
+	for (j=0; j<4; j++){
+		number1=numberPairs[count];
+		count++;
+		number2=numberPairs[count];
+		count++;
+		number2=number1*number2;
+		document.getElementById("table2").rows[i].cells[j].innerHTML="<p>"+number2+" &#247; "+number1+" = <input type=text  size=1 style='font-size: 12pt;  font-weight: bold' id='box' name='box' tabindex='+tabIndex+' ></p>";
+		tabIndex++;
+	}
+   }
+   
+   for(i=0; i<4; i++){
+	for (j=0; j<4; j++){
+		number1=numberPairs[count];
+		count++;
+		number2=numberPairs[count];
+		count++;
+		the_answer=number1*number2;
+		document.getElementById("table3").rows[i].cells[j].innerHTML="<p>"+number1+" x <input type=text align=center size=1 style='font-size: 12pt;  font-weight: bold' id='box' name='box' > =  "+the_answer+" </p>";
+		tabIndex++;
+	}
+   }
+*/  
+
+problem[0]="<table><tr><td><table style='display:inline-table;'><tr> <td rowspan='2' id='sign1'> &equals;</td></tr><tr></tr></table></td>";
+problem[0]+="<td><table style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox'></td></tr><tr><td><input type=text id='denBox'></td></tr></table></td>";
+answer[0]=12;
+
+document.getElementById("table0").rows[0].cells[1].innerHTML=""+problem[0]+"";
+document.getElementById("table0").rows[0].cells[3].innerHTML=""+problem[0]+"";
+
+document.getElementById("table0").rows[1].cells[1].innerHTML=""+problem[0]+"";
+document.getElementById("table0").rows[1].cells[3].innerHTML=""+problem[0]+"";
+
+document.getElementById("table0").rows[2].cells[1].innerHTML=""+problem[0]+"";
+document.getElementById("table0").rows[2].cells[3].innerHTML=""+problem[0]+"";
+
+//group[10]=9;
+problem[1]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>4</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>3</td></tr></table></td>";
+problem[1]+="<td><table id='secondfractionNum' style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox2'></td></tr><tr><td id='bottom'>9</td></tr></table></td>";
+answer[1]=12;
+//focus[10]="numBox";
+
+problem[2]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>1</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>5</td></tr></table></td>";
+problem[2]+="<td><table id='secondfractionDen' style='display:inline-table;'><tr><td id='top'>3</td></tr><tr><td id='bottom'><input type=text id='denBox'></td></tr></table></td>";
+answer[2]=15;
+
+problem[3]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>6</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>9</td></tr></table></td>";
+problem[3]+="<td><table id='secondfractionNum' style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox2'></td></tr><tr><td id='bottom'>6</td></tr></table></td>";
+answer[3]=4;
+
+problem[4]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>10</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>12</td></tr></table></td>";
+problem[4]+="<td><table id='secondfractionDen' style='display:inline-table;'><tr><td id='top'>5</td></tr><tr><td id='bottom'><input type=text id='denBox'></td></tr></table></td>";
+answer[4]=6;
+
+problem[5]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>15</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>20</td></tr></table></td>";
+problem[5]+="<td><table id='secondfractionNum' style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox2'></td></tr><tr><td id='bottom'>8</td></tr></table></td>";
+answer[1]=6;
+
+problem[6]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>4</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>16</td></tr></table></td>";
+problem[6]+="<td><table id='secondfractionDen' style='display:inline-table;'><tr><td id='top'>1</td></tr><tr><td id='bottom'><input type=text id='denBox'></td></tr></table></td>";
+answer[6]=6;
+//
+//  <input type=text id='denBox'>
+// <input type=text id='numBox2'>
+//
+document.getElementById("table05").rows[0].cells[0].innerHTML=""+problem[1]+"";
+document.getElementById("table05").rows[0].cells[1].innerHTML=""+problem[2]+"";
+document.getElementById("table05").rows[0].cells[2].innerHTML=""+problem[3]+"";
+document.getElementById("table05").rows[1].cells[0].innerHTML=""+problem[4]+"";
+document.getElementById("table05").rows[1].cells[1].innerHTML=""+problem[5]+"";
+document.getElementById("table05").rows[1].cells[2].innerHTML=""+problem[6]+"";
+ 
+//group[10]=9;
+problem[10]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>4</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>8</td></tr></table></td>";
+problem[10]+="<td><table style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox'></td></tr><tr><td><input type=text id='denBox'></td></tr></table></td>";
+answer[10]=12;
+//focus[10]="numBox";
+problem[11]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>3</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>9</td></tr></table></td>";
+problem[11]+="<td><table style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox'></td></tr><tr><td><input type=text id='denBox'></td></tr></table></td>";
+answer[11]=13;
+
+problem[12]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>9</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>12</td></tr></table></td>";
+problem[12]+="<td><table style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox'></td></tr><tr><td><input type=text id='denBox'></td></tr></table></td>";
+answer[12]=34;
+
+problem[13]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>4</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>6</td></tr></table></td>";
+problem[13]+="<td><table style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox'></td></tr><tr><td><input type=text id='denBox'></td></tr></table></td>";
+answer[13]=23;
+
+problem[14]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>2</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>8</td></tr></table></td>";
+problem[14]+="<td><table style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox'></td></tr><tr><td><input type=text id='denBox'></td></tr></table></td>";
+answer[14]=14;
+
+problem[15]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>6</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>15</td></tr></table></td>";
+problem[15]+="<td><table style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox'></td></tr><tr><td><input type=text id='denBox'></td></tr></table></td>";
+answer[15]=25;
+
+problem[16]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>6</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>8</td></tr></table></td>";
+problem[16]+="<td><table style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox'></td></tr><tr><td><input type=text id='denBox'></td></tr></table></td>";
+answer[16]=34;
+
+problem[17]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>8</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>10</td></tr></table></td>";
+problem[17]+="<td><table style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox'></td></tr><tr><td><input type=text id='denBox'></td></tr></table></td>";
+answer[17]=45;
+
+problem[18]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>8</td><td rowspan='2' id='sign1'> &nbsp &equals;</td></tr><tr> <td id='bottom'>12</td></tr></table></td>";
+problem[18]+="<td><table style='display:inline-table;'><tr><td id='fraction1'><input type=text id='numBox'></td></tr><tr><td><input type=text id='denBox'></td></tr></table></td>";
+answer[18]=23;
+
+document.getElementById("table1").rows[0].cells[0].innerHTML=""+problem[10]+"";
+document.getElementById("table1").rows[0].cells[1].innerHTML=""+problem[11]+"";
+document.getElementById("table1").rows[0].cells[2].innerHTML=""+problem[12]+"";
+document.getElementById("table1").rows[1].cells[0].innerHTML=""+problem[13]+"";
+document.getElementById("table1").rows[1].cells[1].innerHTML=""+problem[14]+"";
+document.getElementById("table1").rows[1].cells[2].innerHTML=""+problem[15]+"";
+document.getElementById("table1").rows[2].cells[0].innerHTML=""+problem[16]+"";
+document.getElementById("table1").rows[2].cells[1].innerHTML=""+problem[17]+"";
+document.getElementById("table1").rows[2].cells[2].innerHTML=""+problem[18]+"";
+
+
+//group[19]=10;
+//groupDirections[19]="Re-write the fraction in simplest form:<br>";
+problem[20]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>1</td><td rowspan='2' id='sign1M'>";
+problem[20]+=" &plus; </td><td id='top'>1</td><td rowspan='2' id='sign1'> &nbsp &equals;</td><td id='fraction1'>";
+problem[20]+="<input type=text id='numBox'></td></tr><tr> <td id='bottom'>2</td><td id='bottom'>3</td><td><input type=text id='denBox'></td></tr></table></td></tr></td>";
+answer[20]=56;
+//focus[19]="numBox";
+
+problem[21]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>5</td><td rowspan='2' id='sign1M'>";
+problem[21]+=" &plus; </td><td id='top'>2</td><td rowspan='2' id='sign1'> &nbsp &equals;</td><td id='fraction1'>";
+problem[21]+="<input type=text id='numBox'></td></tr><tr> <td id='bottom'>22</td><td id='bottom'>11</td><td><input type=text id='denBox'></td></tr></table></td></tr></td>";
+answer[21]=56;
+
+problem[22]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>5</td><td rowspan='2' id='sign1M'>";
+problem[22]+=" &minus; </td><td id='top'>1</td><td rowspan='2' id='sign1'> &nbsp &equals;</td><td id='fraction1'>";
+problem[22]+="<input type=text id='numBox'></td></tr><tr> <td id='bottom'>8</td><td id='bottom'>6</td><td><input type=text id='denBox'></td></tr></table></td></tr></td>";
+answer[22]=56;
+
+problem[23]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>7</td><td rowspan='2' id='sign1'>";
+problem[23]+=" &plus; </td><td id='top'>4</td><td rowspan='2' id='sign1'> &nbsp &equals;</td><td id='fraction1'>";
+problem[23]+="<input type=text id='numBox'></td></tr><tr> <td id='bottom'>25</td><td id='bottom'>15</td><td><input type=text id='denBox'></td></tr></table></td></tr></td>";
+answer[23]=56;
+
+problem[24]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>1</td><td rowspan='2' id='sign1'>";
+problem[24]+=" &plus; </td><td id='top'>1</td><td rowspan='2' id='sign1'> &nbsp &equals;</td><td id='fraction1'>";
+problem[24]+="<input type=text id='numBox'></td></tr><tr> <td id='bottom'>2</td><td id='bottom'>3</td><td><input type=text id='denBox'></td></tr></table></td></tr></td>";
+answer[24]=56;
+
+problem[25]="<div class='numberImproper' style='display:inline' >3 <div class='frac'>";
+problem[25]+="<span>3</span><span class='symbol'>/</span><span class='bottom'>5</span> </div>";
+problem[25]+=" &minus; ";
+problem[25]+="<div class='numberImproper' style='display:inline'>1 <div class='frac'>";
+problem[25]+="<span>7</span><span class='symbol'>/</span><span class='bottom'>8</span></div>";   
+problem[25]+="&nbsp &equals;";
+
+document.getElementById("table2").rows[0].cells[0].innerHTML=""+problem[20]+"";
+document.getElementById("table2").rows[0].cells[1].innerHTML=""+problem[21]+"";
+document.getElementById("table2").rows[0].cells[2].innerHTML=""+problem[22]+"";
+document.getElementById("table2").rows[1].cells[0].innerHTML=""+problem[23]+"";
+document.getElementById("table2").rows[1].cells[1].innerHTML=""+problem[24]+"";
+document.getElementById("table2").rows[1].cells[2].innerHTML=""+problem[25]+"";
+
+//group[19]=10;
+//groupDirections[19]="Re-write the fraction in simplest form:<br>";
+problem[50]="<table><tr><td><table style='display:inline-table;'><tr> <td id='top'>2</td><td rowspan='2' id='sign1'>";
+problem[50]+=" &times; </td><td id='top'>3</td><td rowspan='2' id='sign1'> &nbsp &equals;</td><td id='fraction1'>";
+//problem[19]+="<input type=text id='numBox'></td><td rowspan='2' id='button'>&nbsp; &nbsp; &nbsp;<button  id='check3' onclick='check3()'>Submit</button><td></tr></table>";
+problem[50]+="<input type=text id='numBox'></td></tr><tr> <td id='bottom'>3</td><td id='bottom'>5</td><td><input type=text id='denBox'></td></tr></table></td></tr></td>";
+//answer[19]=25;
+//focus[19]="numBox";
+
+document.getElementById("table3").rows[0].cells[0].innerHTML=""+problem[50]+"";
+
+}
+
+function checkAnswers1(){
+count=0;
+countCor1=0;
+countWro1=0;
+countAtt1=0;
+for( var i=0; i<16; i++)
+	 {
+	 obj = document.getElementsByName("box").item(i);
+	   if(obj.value.length>0)
+	   {
+		  if( obj.value==numberPairs[count]*numberPairs[count+1])
+		  {
+			obj.style.color="green";
+			obj.style.fontWeight="bold";
+			countCor1++;
+		   }
+		 else 
+		   {
+			obj.style.color="red";
+			obj.style.fontWeight="bold";
+			countWro1++;
+			} 
+		}
+		count=count+2;
+	 }
+	countAtt1=countCor1+countWro1;
+	document.getElementById("results1").innerHTML="You answered "+countCor1+" correct out of "+countAtt1+" attempted."; 
+
+}
+
+function checkAnswers2(){
+count=32;
+countCor2=0;
+countWro2=0;
+countAtt2=0;
+for( var i=16; i<32; i++)
+	 {	 
+	 obj = document.getElementsByName("box").item(i);	
+	   if(obj.value.length>0)
+	   {  
+		  if( obj.value==numberPairs[count+1])
+		  {
+			obj.style.color="green";
+			obj.style.fontWeight="bold";
+			countCor2++;
+		   }
+		 else 
+		   {
+			obj.style.color="red";
+			obj.style.fontWeight="bold";
+			countWro2++;
+			} 
+		}
+		count=count+2;
+	 }
+	countAtt2=countCor2+countWro2;
+	document.getElementById("results2").innerHTML="You answered "+countCor2+" correct out of "+countAtt2+" attempted."; 
+
+}
+
+function checkAnswers3(){
+count=64;
+countCor3=0;
+countWro3=0;
+countAtt3=0;
+for( var i=32; i<48; i++)
+	 {	 
+	 obj = document.getElementsByName("box").item(i);	
+	   if(obj.value.length>0)
+	   { 
+		  if( obj.value==numberPairs[count+1])
+		  {
+			obj.style.color="green";
+			obj.style.fontWeight="bold";
+			countCor3++;
+		   }
+		 else 
+		   {
+			obj.style.color="red";
+			obj.style.fontWeight="bold";
+			countWro3++;
+			} 
+		}
+		count=count+2;
+	 }
+	countAtt3=countCor3+countWro3;
+	document.getElementById("results3").innerHTML="You answered "+countCor3+" correct out of "+countAtt3+" attempted."; 
+
+}
+
+</script>
