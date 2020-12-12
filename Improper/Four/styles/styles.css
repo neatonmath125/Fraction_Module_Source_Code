@@ -1,0 +1,413 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 2000px;
+    overflow: hidden;
+    background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+    font-family: calibri, serif;
+    color: #d9d9d9;
+  }
+  
+  #block {
+    float: left;
+    height: 2000px;
+  }
+  
+  #bgCanvas {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+  }
+
+
+  .fraction {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    width: 45px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 85px;
+    margin-top: 55px;
+    color: black;
+    background-color: #16c280;
+
+  }
+  
+  .fraction:before {
+    border-bottom: 1px solid #000;
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .fraction:after {
+    content: attr(bottom);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .fraction5 {
+    display: inline-block;
+    content: attr(left);
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding-left: 10px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    border-radius: 5px;
+    margin-left: 85px;
+    margin-right: -90px;
+    margin-top: 55px;
+    color: black;
+    background-color: white;
+
+  }
+
+  fraction5:hover{
+    background-color: rgb(55, 168, 233);
+  }
+  
+  .fraction5:before {
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+
+  .fraction {
+    display: inline-block;
+    content: attr(left);
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding-right:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    margin-left: 85px;
+    margin-top: 55px;
+    color: black;
+    background-color: #16c280;
+
+  }
+  
+  .fraction:before {
+    border-bottom: 1px solid #000;
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .fraction:after {
+    content: attr(bottom);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  .logo-photo{
+    margin-top: 5px;
+    width: 150px;
+  }
+  .fraction1 {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 85px;
+    margin-top: 5px;
+    width: 45px;
+    margin-top: 25px;
+    opacity: 1.0;
+    color: black;
+    filter: alpha(opacity=100);
+  }
+  
+  .fraction1:hover{
+    background-color: rgb(55, 168, 233);
+    filter: alpha(opacity=50);
+  }
+  
+  .clock{
+    border-radius: 95px;
+    border: 5px solid black;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin-left: 50px;
+    margin-top: 180px;
+    display: block;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .clock_blank{
+    border-radius: 95px;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: block;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
+  
+  .clock:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 10px;
+    left: 48%;
+    height: 65px;
+    width: 4px;
+    border-radius: 5px;
+    -webkit-transform-origin: 50% 97%;
+        transform-origin: 50% 97%;
+    -webkit-animation: grdAiguille 60s linear infinite;
+        animation: grdAiguille 60s linear infinite;
+  }
+  
+  .wrapper{
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+
+  .difficulty {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 85px;
+    width: 125px;
+    height: 125px;
+    margin-top: 50px;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+  }
+  
+  .difficulty:hover{
+    opacity: 0.75;
+  }
+
+  .new{
+    background-color: white ;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .directions {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 550px;
+    margin-top: -75px;
+    font-size: 40px;
+    opacity: 1.0;
+    color: black;
+  }
+  
+  .points_total{
+    color:white;
+    text-align: center; 
+    font-size: 50px;
+    font-weight: normal; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 0 #000000;
+    margin-top: -50px;
+    -webkit-animation: rainbowdropshadow 5s infinite;
+    animation: rainbowdropshadow 5s infinite;
+  }
+  
+  
+  .directions:hover{
+    filter: alpha(opacity=50);
+    opacity: 0.75;
+  }
+
+  @-webkit-keyframes grdAiguille{
+    0%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);}
+}
+
+@keyframes grdAiguille{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+  .fraction_blank {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-top: 25px;
+    opacity: 0;
+  }
+  
+  
+  .fraction1:before {
+    border-bottom: 1px solid #000;
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .fraction1:after {
+    content: attr(bottom);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+
+/* //////////////////////////////////////////////*/
+canvas { display: block; margin: 2em; }
+.bg-canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(to top, lighten(#97a8c0,20%) 40%, #97a8c0 80%);
+  background-size: cover;
+}
+
+.plane-container {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+ /*Paper Plane: Image*/
+.plane {
+  position: relative;
+  margin: 0 auto;
+  height: 90%;
+  max-width: 140px;
+  width: 20%;
+}
+
+/*Plane: Animation*/
+.plane-container {
+  -webkit-animation: plane-flying 5s linear infinite;
+  -moz-animation: plane-flying 5s linear infinite;
+  animation: plane-flying 5s linear infinite;
+  animation-play-state: paused
+}
+
+@media (max-width: 758) {
+
+  /*Plane: Animation*/
+  .plane-container {
+    width: 100%;
+    -webkit-animation: plane-flying 2.5s linear infinite;
+    -moz-animation: plane-flying 2.5s linear infinite;
+    animation: plane-flying 2.5s linear infinite;
+  }
+  
+  .plane {
+    width: 15%;
+    min-width: 100px;
+  }
+  
+}
+
+@-webkit-keyframes plane-flying {
+  0% {
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+  }
+}
+
+@keyframes plane-flying {
+  0% {
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+.fraction11 {
+  display: inline-block;
+  content: attr(left);
+  font-size: 2em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white ;
+  padding-right:20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  margin-left: 85px;
+  margin-top: 55px;
+  color: black;
+  background-color: white;
+
+}
+
+.fraction11:before {
+  border-bottom: 1px solid #000;
+  content: attr(top);
+  display: block;
+  line-height: 1.6em;
+  padding: 0 0.2em;
+}
+
+.fraction11:after {
+  content: attr(bottom);
+  display: block;
+  line-height: 1.6em;
+  padding: 0 0.2em;
+}
