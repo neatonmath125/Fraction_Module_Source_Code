@@ -1,0 +1,398 @@
+
+
+
+  
+  .fraction1 {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(101, 214, 190) ;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 85px;
+    margin-top: 5px;
+    width: 45px;
+    margin-top: 25px;
+    opacity: 1.0;
+    color: black;
+    filter: alpha(opacity=100);
+	}
+	
+	.fraction1:hover{
+		opacity: .5;
+	}
+
+	.logo-photo{
+		margin-top: 5px;
+		width: 150px;
+	}
+   
+  .fraction1:before {
+    border-bottom: 1px solid #000;
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .fraction1:after {
+    content: attr(bottom);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .main1-photo{
+    width: 350px;
+    margin-left: 295px;
+    text-align: center;
+}
+
+
+  .portfolio-photo{
+    width: 155px;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    padding-right: 25px;
+}
+
+.portfolio-photo:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+  
+  .clock{
+    border-radius: 95px;
+    border: 5px solid black;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin-left: 20px;
+    margin-top: 42px;
+    display: block;
+    width: 150px;
+    height: 150px;
+  }
+  
+  
+  .clock:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 10px;
+    left: 48%;
+    height: 65px;
+    width: 4px;
+    border-radius: 5px;
+    -webkit-transform-origin: 50% 97%;
+        transform-origin: 50% 97%;
+    -webkit-animation: grdAiguille 20s linear infinite;
+        animation: grdAiguille 20s linear infinite;
+  }
+  
+  .fraction_2 {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    color: black;
+    width: 45px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-top: -25px;
+  }
+  
+  .mult_2{
+    display: inline-block;
+    font-size: 3.5em;
+    margin-top: 75px;
+    margin-left: 45px;
+    margin-right: 45px;
+    color: black;
+  }
+  .fraction_2:before {
+    border-bottom: 1px solid #000;
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .fraction_2:after {
+    content: attr(bottom);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  .wrapper55{
+    margin-top: 70px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width:1000; 
+    color: black; 
+    background-color:white; 
+    padding: 25px; 
+    border-radius: 5px;
+    font-size: 25px;
+  }
+  .fraction {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    width: 45px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 85px;
+    margin-top: 55px;
+    color: black;
+    background-color: #16c280;
+
+  }
+  
+  .fraction:before {
+    border-bottom: 1px solid #000;
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .fraction:after {
+    content: attr(bottom);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .fraction5 {
+    display: inline-block;
+    content: attr(left);
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding-left: 10px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    border-radius: 5px;
+    margin-left: 85px;
+    margin-right: -90px;
+    margin-top: 55px;
+    color: black;
+    background-color: white;
+
+  }
+
+  fraction5:hover{
+    background-color: white;
+  }
+  
+  .fraction5:before {
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+
+  .fraction {
+    display: inline-block;
+    content: attr(left);
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding-right:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    margin-left: 85px;
+    margin-top: 55px;
+    color: black;
+    background-color: #16c280;
+
+  }
+  .mult11_2{
+    display: inline-block;
+    font-size: 3.5em;
+    margin-top: 75px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .fraction:before {
+    border-bottom: 1px solid #000;
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .fraction:after {
+    content: attr(bottom);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+	
+@-webkit-keyframes grdAiguille{
+	0%{-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(360deg);}
+}
+
+@keyframes grdAiguille{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+}
+
+  .wrapper{
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+
+  .difficulty {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 85px;
+    width: 125px;
+    height: 125px;
+    margin-top: 50px;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+  }
+  
+  .difficulty:hover{
+    opacity: 0.75;
+  }
+
+  .new{
+    background-color: white ;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .directions {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 550px;
+    margin-top: -75px;
+    font-size: 40px;
+    opacity: 1.0;
+    color: black;
+  }
+  
+  .points_total{
+    color:white;
+    text-align: center; 
+    font-size: 50px;
+    font-weight: normal; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 0 #000000;
+    margin-top: -50px;
+    -webkit-animation: rainbowdropshadow 5s infinite;
+    animation: rainbowdropshadow 5s infinite;
+  }
+  
+  
+  .directions:hover{
+    filter: alpha(opacity=50);
+    opacity: 0.75;
+  }
+
+  .fraction_blank {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-top: 25px;
+    opacity: 0;
+  }
+  
+  
+  
+  html, body {
+    -webkit-background-size: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    }
+
+
+
+   
+.points_scored {
+  display: inline-block;
+  font-size: 2em;
+  content: "+6";
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white ;
+  width: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 45px;
+  z-index: 550;
+  
+}
+
+.points_scored:before {
+  content: attr(top);
+  display: block;
+}
+
+body {
+	margin: 0;
+	background-color: #000;
+	color: #fff;
+	-webkit-perspective: 1000;
+  perspective: 1000;
+  overflow: hidden;
+}
+
+.galaxy {
+  position: absolute;
+  margin-bottom:5000;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	background-color: #fff;
+	width: 20px;
+	height: 15px;
+	border-radius: 50%;
+  z-index:-100
+}
