@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(circle cover, #cfe6fc, #6eb3f7);
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+/*# sourceMappingURL=styles1.css.map */
