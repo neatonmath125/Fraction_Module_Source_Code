@@ -1,0 +1,545 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 2000px;
+    overflow: hidden;
+    background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+    font-family: calibri, serif;
+    color: #d9d9d9;
+  }
+  
+  #block {
+    float: left;
+    height: 2000px;
+  }
+  
+  #bgCanvas {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+  }
+
+
+  .logo-photo{
+    margin-top: 5px;
+    width: 150px;
+  }
+  
+
+
+
+.checker1{
+  background-color: white;
+  color: black;
+  z-index: 1000000;
+}
+
+.checker1:hover{
+opacity: .5;  
+}
+
+
+.mult{
+  display: inline-block;
+  font-size: 3.5em;
+  padding-left: 375px;
+  padding-top:35px;
+  padding-bottom:42px;
+  margin-top: 120px;
+  margin-right: -90px;
+  margin-left: 150px;
+  background-color: white; 
+  color: black;
+  border-radius: 5px;
+  z-index: 10000px;
+}
+
+
+
+.fraction1 {
+  display: inline-block;
+  font-size: 2em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white ;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 0px;
+  margin-top: 25px;
+  opacity: 1.0;
+}
+  
+  .wrapper{
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+
+  .difficulty {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 85px;
+    width: 125px;
+    height: 125px;
+    margin-top: 50px;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+  }
+  
+  .difficulty:hover{
+    opacity: 0.75;
+  }
+
+  .new{
+    background-color: white ;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .directions {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 550px;
+    margin-top: -75px;
+    font-size: 40px;
+    opacity: 1.0;
+    color: black;
+  }
+  
+  .points_total{
+    color:white;
+    text-align: center; 
+    font-size: 50px;
+    font-weight: normal; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 0 #000000;
+    margin-top: -50px;
+    -webkit-animation: rainbowdropshadow 5s infinite;
+    animation: rainbowdropshadow 5s infinite;
+  }
+  
+  
+  .directions:hover{
+    filter: alpha(opacity=50);
+    opacity: 0.75;
+  }
+
+  @-webkit-keyframes grdAiguille{
+    0%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);}
+}
+
+@keyframes grdAiguille{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+  .fraction_blank {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-top: 25px;
+    opacity: 0;
+  }
+  
+  
+  .fraction1:before {
+    border-bottom: 1px solid #000;
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .fraction1:after {
+    content: attr(bottom);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+
+/* //////////////////////////////////////////////*/
+canvas { display: block; margin: 2em; }
+.bg-canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(to top, lighten(#97a8c0,20%) 40%, #97a8c0 80%);
+  background-size: cover;
+}
+
+.plane-container {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+ /*Paper Plane: Image*/
+.plane {
+  position: relative;
+  margin: 0 auto;
+  height: 90%;
+  max-width: 140px;
+  width: 20%;
+}
+
+/*Plane: Animation*/
+.plane-container {
+  -webkit-animation: plane-flying 5s linear infinite;
+  -moz-animation: plane-flying 5s linear infinite;
+  animation: plane-flying 5s linear infinite;
+  animation-play-state: paused
+}
+
+@media (max-width: 758) {
+
+  /*Plane: Animation*/
+  .plane-container {
+    width: 100%;
+    -webkit-animation: plane-flying 2.5s linear infinite;
+    -moz-animation: plane-flying 2.5s linear infinite;
+    animation: plane-flying 2.5s linear infinite;
+  }
+  
+  .plane {
+    width: 15%;
+    min-width: 100px;
+  }
+  
+}
+
+@-webkit-keyframes plane-flying {
+  0% {
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+  }
+}
+
+@keyframes plane-flying {
+  0% {
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+.fraction11 {
+  display: inline-block;
+  content: attr(left);
+  font-size: 2em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white ;
+  padding-right:20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  margin-left: 85px;
+  margin-top: -100px;
+  color: black;
+  background-color: white;
+
+}
+
+.fraction11:before {
+  border-bottom: 1px solid #000;
+  content: attr(top);
+  display: block;
+  line-height: 1.6em;
+  padding: 0 0.2em;
+}
+
+.fraction11:after {
+  content: attr(bottom);
+  display: block;
+  line-height: 1.6em;
+  padding: 0 0.2em;
+}
+
+/*Simple reset*/
+* {margin: 0; padding: 0;}
+
+body {
+	/*You can use any kind of background here.*/
+	background: darkslategray;
+}
+canvas {
+}
+
+.mountain-one 
+	{
+        position: absolute;
+        bottom: 0;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 180px solid #7ac1e4;
+        z-index: 1;
+	}
+.mountain-top1
+	{
+	position: absolute;
+    right: -65px;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-bottom: 77px solid #FFFAFA;
+    z-index: 1;
+	}
+.mountain-cap1
+	{
+	position: absolute;
+	left: -55px; 
+    top: 70px;
+    border-left: 35px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 25px solid #FFFAFA;
+	}
+.mountain-two
+	{
+        position: absolute;
+        bottom: -20px;
+		left: 80px;
+		opacity: .35;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 180px solid #7ac1e4;
+        z-index: 0;
+	}
+.mountain-top2
+	{	
+	position: absolute;
+    right: -65px;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-bottom: 77px solid slategray;
+    z-index: 0;
+	}
+.mountain-cap2
+	{
+	position: absolute;
+	left: -25px;
+    top: 70px;
+    border-left: 35px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 25px solid slategray;
+	}
+	
+.mountain-three
+	{
+        position: absolute;
+        bottom: -10px;
+		opacity: .5;
+		left: -60px;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 180px solid #7ac1e4;
+        z-index: 0;
+	}
+
+.mountain-top3
+	{
+	position: absolute;
+    right: -65px;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-bottom: 77px solid #FFFAFA;
+    z-index: 0;
+	}
+.mountain-cap3
+	{
+	position: absolute;
+	left: -25px;
+    top: 70px;
+    border-left: 35px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 25px solid #FFFAFA;
+  }
+  
+  .fraction_2 {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 0.2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    color: black;
+    width: 45px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-top: -25px;
+  }
+  
+  .mult_2{
+    display: inline-block;
+    font-size: 3.5em;
+    margin-top: 75px;
+    margin-left: 45px;
+    margin-right: 45px;
+    color: black;
+  }
+  .fraction_2:before {
+    border-bottom: 1px solid #000;
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .fraction_2:after {
+    content: attr(bottom);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+
+  .fraction5_2 {
+    display: inline-block;
+    content: attr(left);
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding-left: 10px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    border-radius: 5px;
+    margin-left: 85px;
+    margin-right: -90px;
+    margin-top: -23px;
+    color: black;
+    background-color: #16c280;
+  
+  }
+  
+  .fraction5_2:before {
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  
+  
+  .fraction11_2 {
+    display: inline-block;
+    content: attr(left);
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding-right:20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    margin-left: 85px;
+    margin-top: -23px;
+    color: black;
+    background-color: #16c280;
+  
+  }
+  
+  .fraction11_2:before {
+    border-bottom: 1px solid #000;
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .fraction11_2:after {
+    content: attr(bottom);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  
+  .mult_2{
+    display: inline-block;
+    font-size: 3.5em;
+    padding-left: 375px;
+    padding-top:35px;
+    padding-bottom:42px;
+    margin-top: 250px;
+    margin-right: -90px;
+    margin-left: 170px;
+    background-color: white; 
+    border-radius: 5px;
+    color: black;
+    z-index: 10000px;
+  }
+  .mult11_2{
+    display: inline-block;
+    font-size: 3.5em;
+    margin-top: 75px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  
+  .fraction1_2 {
+    display: inline-block;
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white ;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-top: 25px;
+    opacity: 1.0;
+  }
+
+  .wrapper55{
+    margin-top: 70px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width:1000; 
+    color: black; 
+    background-color:white; 
+    padding: 25px; 
+    border-radius: 5px;
+    font-size: 25px;
+  }
